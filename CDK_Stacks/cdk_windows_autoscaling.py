@@ -5,7 +5,7 @@ import aws_cdk.aws_autoscaling as asg
 import aws_cdk.aws_elasticloadbalancingv2 as lb
 
 clean_windows_ami = ec2.MachineImage.latest_windows(version=ec2.WindowsVersion.WINDOWS_SERVER_2019_ENGLISH_FULL_BASE)  # Clean image
-custom_ami = ec2.MachineImage.lookup(name= "dudu-asg-test") #Change it to your AMI
+custom_ami = ec2.MachineImage.lookup(name= "your-ami-name") #Change it to your AMI
 
 with open("./user_data/user_data_script.ps1") as f:
     user_data = f.read()
