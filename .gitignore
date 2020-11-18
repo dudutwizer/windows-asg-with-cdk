@@ -9,4 +9,3 @@ __pycache__
 cdk.out
 .DS_Store
 cdk.context.json
-params.py
